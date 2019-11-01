@@ -23,7 +23,7 @@ def get_tree():
     return generate_tree()
 
 def generate_tree():
-    data = pd.read_csv('../static/bodoge_list2.csv')
+    data = pd.read_csv('./static/bodhoge_list2.csv')
     data = data.drop('designer', axis=1)
 
     train_X = data.drop('name', axis=1)
